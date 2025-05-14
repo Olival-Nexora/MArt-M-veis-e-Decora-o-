@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M'Art Móveis e Decoração</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+    header {
+      background: linear-gradient(to right, #8B4513, #FFA500);
+      padding: 40px 20px;
+      text-align: center;
+      position: relative;
+    }
+    header img.logo {
+      width: 120px;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+    header h1 {
+      color: white;
+      font-size: 2rem;
+      margin-top: 40px;
+    }
+    .argumentos, .diferenciais {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+      gap: 20px;
+    }
+    .card {
+      flex: 1 1 250px;
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .portfolio {
+      background: #fff;
+      padding: 40px 20px;
+    }
+    .portfolio h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .galeria img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .cta {
+      text-align: center;
+      padding: 30px;
+    }
+    .cta a {
+      background: #FFA500;
+      color: #fff;
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    @media (max-width: 768px) {
+      header h1 { font-size: 1.5rem; margin-top: 80px; }
+      header img.logo { width: 80px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="FB_IMG_17461374211666545.jpg" alt="Logo M'Art" class="logo">
+    <h1>Sofisticação, elegância e praticidade em cada projeto.</h1>
+  </header>
+
+  <section class="argumentos">
+    <div class="card">Lojas comerciais planejadas</div>
+    <div class="card">Cozinhas planejadas</div>
+    <div class="card">Quartos planejados</div>
+  </section>
+
+  <section class="diferenciais">
+    <div class="card">Qualidade esmerada</div>
+    <div class="card">Pontualidade britânica</div>
+    <div class="card">Variedade de cores e padrões</div>
+    <div class="card">Projetista com +10 anos de experiência</div>
+    <div class="card">Máquinas de última geração</div>
+    <div class="card">Portfólio vasto</div>
+  </section>
+
+  <section class="portfolio">
+    <h2>Portfólio</h2>
+    <div class="galeria">
+      <img src="https://via.placeholder.com/400x300?text=Projeto+1" alt="Projeto 1">
+      <img src="https://via.placeholder.com/400x300?text=Projeto+2" alt="Projeto 2">
+      <img src="https://via.placeholder.com/400x300?text=Projeto+3" alt="Projeto 3">
+    </div>
+  </section>
+
+  <section class="cta">
+    <a href="https://wa.me/5586999334312" target="_blank">Solicite Orçamento</a>
+  </section>
+
+  <footer>
+    <p>M'Art – Onde seu espaço ganha alma e estilo.</p>
+    <p>Contato: (86) 99933-4312</p>
+  </footer>
+</body>
+</html>
