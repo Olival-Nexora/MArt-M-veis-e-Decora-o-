@@ -1,123 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>M'Art Móveis e Decoração</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M'ART Móveis e Decoração</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
     header {
-      background: linear-gradient(to right, #8B4513, #FFA500);
-      padding: 40px 20px;
+      background: url('images/cabecalho.png') center/cover no-repeat;
+      color: white;
+      padding: 2rem;
       text-align: center;
       position: relative;
     }
     header img.logo {
-      width: 120px;
+      width: 150px;
       position: absolute;
-      top: 10px;
-      left: 10px;
+      top: 20px;
+      left: 20px;
     }
-    header h1 {
-      color: white;
-      font-size: 2rem;
-      margin-top: 40px;
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
     }
-    .argumentos, .diferenciais {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 40px 20px;
-      gap: 20px;
+    main {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
     }
-    .card {
-      flex: 1 1 250px;
-      background: #f9f9f9;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      text-align: center;
+    section {
+      margin-bottom: 3rem;
     }
-    .portfolio {
-      background: #fff;
-      padding: 40px 20px;
-    }
-    .portfolio h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .galeria {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .galeria img {
-      width: 100%;
+    img {
+      max-width: 100%;
       height: auto;
+      margin-top: 1rem;
       border-radius: 8px;
-    }
-    .cta {
-      text-align: center;
-      padding: 30px;
-    }
-    .cta a {
-      background: #FFA500;
-      color: #fff;
-      padding: 15px 30px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
     footer {
-      background: #333;
-      color: #fff;
+      background-color: #f4f4f4;
       text-align: center;
-      padding: 20px;
-    }
-    @media (max-width: 768px) {
-      header h1 { font-size: 1.5rem; margin-top: 80px; }
-      header img.logo { width: 80px; }
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #777;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="FB_IMG_17461374211666545.jpg" alt="Logo M'Art" class="logo">
-    <h1>Sofisticação, elegância e praticidade em cada projeto.</h1>
+    <img src="images/logo_sem_fundo.png" alt="Logomarca M'ART" class="logo" />
+    <h1>M'ART Móveis e Decoração</h1>
+    <p>Transformando ambientes com estilo, funcionalidade e personalidade.</p>
   </header>
+  <main>
+    <section>
+      <h2>Quartos Planejados</h2>
+      <p>Realizamos o sonho do quarto perfeito para sua princesa! Com móveis sob medida em MDF rosa e detalhes em branco, criamos um ambiente encantador com cortinas de voal e uma linda penteadeira com espelho amplo.</p>
+      <img src="images/quarto.png" alt="Quarto planejado para princesa" />
+    </section>
 
-  <section class="argumentos">
-    <div class="card">Lojas comerciais planejadas</div>
-    <div class="card">Cozinhas planejadas</div>
-    <div class="card">Quartos planejados</div>
-  </section>
+    <section>
+      <h2>Lojas Comerciais Personalizadas</h2>
+      <p>Para você que quer destacar seu negócio em um shopping ou rua comercial, criamos lojas planejadas com balcões, escaninhos, prateleiras altas e muitas gavetas. Utilizamos MDF nas cores laranja, verde e branco para um ambiente alegre e moderno.</p>
+      <img src="images/loja.png" alt="Loja planejada vista de fora" />
+    </section>
 
-  <section class="diferenciais">
-    <div class="card">Qualidade esmerada</div>
-    <div class="card">Pontualidade britânica</div>
-    <div class="card">Variedade de cores e padrões</div>
-    <div class="card">Projetista com +10 anos de experiência</div>
-    <div class="card">Máquinas de última geração</div>
-    <div class="card">Portfólio vasto</div>
-  </section>
-
-  <section class="portfolio">
-    <h2>Portfólio</h2>
-    <div class="galeria">
-      <img src="https://via.placeholder.com/400x300?text=quarto.png" alt="quato.png">
-      <img src="https://via.placeholder.com/400x300?text=loja.png" alt="loja.png">
-      <img src="https://via.placeholder.com/400x300?text=cozinha.png" alt="cozinha.png">
-    </div>
-  </section>
-
-  <section class="cta">
-    <a href="https://wa.me/5586999334312" target="_blank">Solicite Orçamento</a>
-  </section>
-
+    <section>
+      <h2>Cozinhas Planejadas</h2>
+      <p>Criamos cozinhas que aliam beleza e funcionalidade. Design contemporâneo, iluminação estratégica e aproveitamento total do espaço, tudo feito sob medida com acabamento de alto padrão.</p>
+      <img src="images/cozinha.png" alt="Cozinha planejada moderna" />
+    </section>
+  </main>
   <footer>
-    <p>M'Art – Onde seu espaço ganha alma e estilo.</p>
-    <p>Contato: (86) 99933-4312</p>
+    <p>&copy; 2025 M'ART Móveis e Decoração. Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>
